@@ -8,6 +8,12 @@ export const ContactSection: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const mailtoUrl = `mailto:sandeep9singroul@gmail.com?subject=${encodeURIComponent(
+      `Portfolio Inquiry from ${formData.name}`
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+    window.location.href = mailtoUrl;
     setSent(true);
   };
 
@@ -63,11 +69,65 @@ export const ContactSection: React.FC = () => {
               </motion.div>
 
               <p
-                className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md"
+                className="text-xs sm:text-[13px] font-light text-[#A8988B] leading-relaxed max-w-md mb-8"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Have an ambitious system to architect, an engineering opportunity, or a collaborative inquiry? Send a direct dispatch below.
+                Actively seeking opportunities to architect scalable, high-concurrency software systems. Open to Full Stack &amp; Backend Engineering roles.
               </p>
+
+              {/* Direct Coordinate Details */}
+              <div className="space-y-4 pt-6 border-t border-[#8C6D4F]/25">
+                <a
+                  href="mailto:sandeep9singroul@gmail.com"
+                  className="group flex items-center space-x-3 text-xs text-[#EAD8C7] hover:text-[#D4AF37] transition-colors"
+                >
+                  <span className="text-[10px] font-mono text-[#D4AF37]">EMAIL //</span>
+                  <span className="font-mono">sandeep9singroul@gmail.com</span>
+                  <span className="text-xs group-hover:translate-x-1 transition-transform">↗</span>
+                </a>
+
+                <a
+                  href="tel:+916260676770"
+                  className="group flex items-center space-x-3 text-xs text-[#EAD8C7] hover:text-[#D4AF37] transition-colors"
+                >
+                  <span className="text-[10px] font-mono text-[#D4AF37]">PHONE //</span>
+                  <span className="font-mono">+91 6260676770</span>
+                  <span className="text-xs group-hover:translate-x-1 transition-transform">↗</span>
+                </a>
+
+                <div className="flex items-center space-x-3 text-xs text-[#A8988B]">
+                  <span className="text-[10px] font-mono text-[#D4AF37]">LOCATION //</span>
+                  <span className="font-mono">Bengaluru, Karnataka</span>
+                </div>
+              </div>
+
+              {/* Social Channels */}
+              <div className="flex flex-wrap gap-3 mt-8">
+                <a
+                  href="https://www.linkedin.com/in/sandeep-singh-a29314260"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-[10.5px] font-mono tracking-wider uppercase border border-[#8C6D4F]/40 bg-[#120F0C] text-[#E8D7C5] hover:border-[#D4AF37] hover:text-[#D4AF37] transition-all"
+                >
+                  LINKEDIN ↗
+                </a>
+                <a
+                  href="https://github.com/Sandeepsingh6260"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-[10.5px] font-mono tracking-wider uppercase border border-[#8C6D4F]/40 bg-[#120F0C] text-[#E8D7C5] hover:border-[#D4AF37] hover:text-[#D4AF37] transition-all"
+                >
+                  GITHUB ↗
+                </a>
+                <a
+                  href="https://sandeepsingh-portfolio.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-[10.5px] font-mono tracking-wider uppercase border border-[#8C6D4F]/40 bg-[#120F0C] text-[#E8D7C5] hover:border-[#D4AF37] hover:text-[#D4AF37] transition-all"
+                >
+                  VERCEL ↗
+                </a>
+              </div>
             </div>
           </div>
 
@@ -167,10 +227,10 @@ export const ContactSection: React.FC = () => {
         {/* System Footer Line */}
         <div className="pt-16 mt-16 border-t border-[#8C6D4F]/15 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-4">
           <span className="text-[10px] font-mono tracking-widest text-[#8C6D4F] uppercase">
-            PORTFOLIO // EDITION 2026
+            SANDEEP SINGH // JAVA FULL STACK DEVELOPER
           </span>
           <span className="text-[10px] font-mono text-[#8C6D4F]">
-            © {new Date().getFullYear()} • ENGINEERED WITH PRECISION
+            © {new Date().getFullYear()} SANDEEP SINGH • ALL RIGHTS RESERVED
           </span>
         </div>
 

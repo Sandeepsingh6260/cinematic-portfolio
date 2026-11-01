@@ -73,6 +73,7 @@ export const HeroSection: React.FC = () => {
           playsInline
           className="h-screen w-auto max-w-none object-contain origin-right scale-95 md:scale-[0.98] lg:scale-100"
         >
+          <source src="/hero.mp4" type="video/mp4" />
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
 
@@ -118,7 +119,7 @@ export const HeroSection: React.FC = () => {
             className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            LOHITHA.
+            SANDEEP.
           </a>
 
           {/* Navigation Links */}
@@ -140,19 +141,34 @@ export const HeroSection: React.FC = () => {
             ))}
           </nav>
 
-          {/* Right Action */}
-          <a
-            href="#contact"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="group flex items-center space-x-2 text-[11px] tracking-[0.24em] font-light uppercase py-2 px-4 border border-[#8C6D4F]/50 hover:border-[#D4AF37] text-[#EAD8C7] transition-all duration-300 backdrop-blur-sm ml-auto md:ml-0"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            <span>LET&apos;S TALK</span>
-            <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">
-              ↗
-            </span>
-          </a>
+          {/* Right Actions */}
+          <div className="flex items-center space-x-3 ml-auto md:ml-0">
+            <a
+              href="https://www.linkedin.com/in/sandeep-singh-a29314260"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="hidden sm:inline-flex items-center space-x-1.5 text-[11px] tracking-[0.2em] font-light uppercase py-2 px-3 border border-[#8C6D4F]/30 hover:border-[#D4AF37] text-[#C4B5A5] hover:text-[#FFF5EB] transition-all duration-300 backdrop-blur-sm"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              <span>LINKEDIN</span>
+              <span className="text-xs">↗</span>
+            </a>
+
+            <a
+              href="#contact"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="group flex items-center space-x-2 text-[11px] tracking-[0.24em] font-light uppercase py-2 px-4 border border-[#8C6D4F]/50 hover:border-[#D4AF37] text-[#EAD8C7] transition-all duration-300 backdrop-blur-sm"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
+              <span>LET&apos;S TALK</span>
+              <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">
+                ↗
+              </span>
+            </a>
+          </div>
         </header>
 
         {/* Main Hero Row */}
@@ -171,19 +187,19 @@ export const HeroSection: React.FC = () => {
                 className="text-6xl sm:text-7xl md:text-8xl lg:text-[7.2rem] xl:text-[7.8rem] tracking-tight uppercase leading-[0.83]"
                 style={{ fontFamily: "'Bebas Neue', sans-serif" }}
               >
-                {/* Line 1: I BUILD */}
+                {/* Line 1: I ARCHITECT */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
-                  I BUILD
+                  I ARCHITECT
                 </span>
 
-                {/* Line 2: DIGITAL */}
+                {/* Line 2: RESILIENT */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-                  DIGITAL
+                  RESILIENT
                 </span>
 
-                {/* Line 3: EXPERIENCES */}
+                {/* Line 3: SYSTEMS */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#DFBE8A] via-[#9B7640] to-[#342410] drop-shadow-[0_10px_30px_rgba(155,118,64,0.4)]">
-                  EXPERIENCES
+                  SYSTEMS
                 </span>
               </h1>
             </motion.div>
@@ -194,7 +210,7 @@ export const HeroSection: React.FC = () => {
                 className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#C4B29E]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> UI/UX DESIGNER <span className="text-[#8C6D4F] mx-1">•</span> DATA SCIENCE
+                JAVA FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> SPRING BOOT &amp; REACT <span className="text-[#8C6D4F] mx-1">•</span> WEBSOCKET &amp; KAFKA
               </p>
             </motion.div>
 
@@ -205,9 +221,9 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                I turn bold ideas into seamless digital experiences.
+                Architecting high-performance backends and interactive web platforms.
                 <br />
-                Where frontend meets powerful backend, and code transforms vision into impact.
+                Layered Spring Boot services, real-time WebSockets, and seamless React applications.
               </p>
             </motion.div>
 
@@ -267,8 +283,8 @@ export const HeroSection: React.FC = () => {
               className="text-[9.5px] font-medium tracking-[0.24em] uppercase text-[#E0D3C5] space-y-1 mb-3"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              <p>CODE IS MY CRAFT.</p>
-              <p>IMPACT IS MY GOAL.</p>
+              <p>PRECISION IN ARCHITECTURE.</p>
+              <p>IMPACT IN EXECUTION.</p>
             </div>
 
             {/* 3. Gold Accent Line */}
@@ -282,7 +298,7 @@ export const HeroSection: React.FC = () => {
                 letterSpacing: '0.04em',
               }}
             >
-              Lohitha
+              Sandeep
             </div>
           </motion.div>
         </div>

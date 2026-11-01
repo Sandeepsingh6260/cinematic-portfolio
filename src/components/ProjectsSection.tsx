@@ -8,6 +8,7 @@ interface Project {
   category: string;
   description: string;
   githubUrl: string;
+  liveUrl?: string;
   tech: string[];
   metrics: { label: string; value: string }[];
 }
@@ -15,97 +16,115 @@ interface Project {
 const projects: Project[] = [
   {
     number: '01',
-    title: 'PolicyGuard AI',
-    category: 'AI / LEGAL-TECH PLATFORM',
+    title: 'WorkSphere',
+    category: 'ENTERPRISE WORKPLACE PLATFORM (LIVE IN PRODUCTION)',
     description:
-      'AI-powered platform engineered for automated privacy policy analysis and legal contract auditing across web, desktop, and mobile. Implements NLP extraction, real-time risk alert detection, and generative risk score intelligence.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Architected and shipped a live, production-grade full-stack workplace platform end-to-end. Built core business modules including daily team updates, real-time WebSocket chat and notifications, leave management, company announcements, and internal mail systems.',
+    githubUrl: 'https://github.com/Sandeepsingh6260',
+    liveUrl: 'https://worksphere.dollopinfotech.com',
     tech: [
-      'React.js',
-      'React Native',
-      'Electron.js',
-      'Node.js',
-      'Express.js',
-      'MongoDB Atlas',
-      'OpenAI API',
-      'Prompt Eng',
-      'NLP',
-      'Docker',
+      'Spring Boot',
+      'Spring Security',
       'JWT',
+      'React.js',
+      'WebSocket',
+      'MySQL',
+      'Hibernate/JPA',
+      'Git',
     ],
     metrics: [
-      { label: 'PLATFORMS', value: 'Web, Mobile, Desktop' },
-      { label: 'ENGINE', value: 'OpenAI NLP / GPT' },
-      { label: 'PIPELINE', value: 'Automated Scoring' },
+      { label: 'STATUS', value: 'Live in Production' },
+      { label: 'REAL-TIME', value: 'WebSocket Engine' },
+      { label: 'SECURITY', value: 'JWT & RBAC' },
     ],
   },
   {
     number: '02',
-    title: 'Software Release Risk Heatmap',
-    category: 'MACHINE LEARNING / DEV PLATFORM',
+    title: 'PSchool Onboarding & Management',
+    category: 'INSTITUTE WORKFLOW & CONTRACT MANAGEMENT',
     description:
-      'Full-stack predictive release management platform utilizing Machine Learning. Implements a trained Random Forest classifier to categorize release stability from Low to Critical risk, rendered over a live interactive team heatmap.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Multi-tier institute management system handling candidate enquiries, step-based document onboarding, contract management, and admin approval pipelines. Built end-to-end media upload flows with Super Admin verification dashboards.',
+    githubUrl: 'https://github.com/Sandeepsingh6260',
     tech: [
-      'React.js',
-      'TypeScript',
-      'Python',
-      'FastAPI',
-      'scikit-learn',
-      'PostgreSQL',
-      'Tailwind CSS',
-      'REST APIs',
+      'Spring Boot',
+      'Spring Security',
       'JWT',
+      'React.js',
+      'MySQL',
+      'Hibernate/JPA',
+      'REST APIs',
+      'Git',
     ],
     metrics: [
-      { label: 'MODEL', value: 'Random Forest' },
-      { label: 'ACCURACY', value: 'High Precision' },
-      { label: 'DASHBOARD', value: 'Live Risk Heatmap' },
+      { label: 'ARCHITECTURE', value: 'Multi-Tier Flow' },
+      { label: 'DOCUMENTS', value: 'Secure Verification' },
+      { label: 'ROLES', value: 'Super Admin, Staff, Applicant' },
     ],
   },
   {
     number: '03',
-    title: 'Multi-Tenant SaaS Platform',
-    category: 'CLOUD / DISTRIBUTED SYSTEM',
+    title: 'Sales Tracking & Pipeline System',
+    category: 'EVENT-DRIVEN ENTERPRISE SALES PLATFORM',
     description:
-      'Enterprise-grade multi-tenant platform built for unified management of teams, projects, and execution lifecycles. Architected with strict tenant data isolation, granular Role-Based Access Control (RBAC), and containerized deployments.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Full-stack system streamlining leads, deals, sales targets, and team quotas. Optimized with Redis caching for high-frequency queries and Apache Kafka for asynchronous event-driven processing of sales updates with Swagger documentation.',
+    githubUrl: 'https://github.com/Sandeepsingh6260',
     tech: [
-      'Node.js',
-      'Express.js',
+      'Spring Boot',
+      'Spring Security',
+      'React.js',
       'PostgreSQL',
-      'React',
-      'Docker',
-      'JWT',
-      'RBAC',
-      'REST APIs',
+      'Redis',
+      'Apache Kafka',
+      'Swagger/OpenAPI',
     ],
     metrics: [
-      { label: 'ARCHITECTURE', value: 'Multi-Tenant' },
-      { label: 'SECURITY', value: 'RBAC Isolation' },
-      { label: 'CONTAINERS', value: 'Docker Compose' },
+      { label: 'STREAMING', value: 'Apache Kafka Events' },
+      { label: 'CACHING', value: 'Redis Layer' },
+      { label: 'DATABASE', value: 'PostgreSQL Relational' },
     ],
   },
   {
     number: '04',
-    title: 'Payment Gateway with Hosted Checkout',
-    category: 'FINTECH / PAYMENT SYSTEMS',
+    title: 'Job Portal Application',
+    category: 'WEB PLATFORM / MVC ARCHITECTURE',
     description:
-      'End-to-end hosted payment gateway infrastructure supporting seamless merchant order generation, multi-currency processing, and secure consumer checkout via UPI and Cards with webhook transaction verification.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Web-based recruitment engine featuring separated, tailored workflows for job seekers and recruiters. Includes job postings, resume workflows, application lifecycle status tracking (Pending/Shortlisted/Rejected), and persistent JDBC storage.',
+    githubUrl: 'https://github.com/Sandeepsingh6260',
     tech: [
-      'Node.js',
-      'Spring Boot',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'REST APIs',
-      'UPI / Card Integrations',
+      'Java',
+      'Servlet',
+      'JSP',
+      'JDBC',
+      'MySQL',
+      'MVC Architecture',
+      'Eclipse',
     ],
     metrics: [
-      { label: 'PROTOCOLS', value: 'UPI & Cards' },
-      { label: 'BACKEND', value: 'Spring Boot + Node' },
-      { label: 'DATABASE', value: 'ACID PostgreSQL' },
+      { label: 'DESIGN PATTERN', value: 'MVC Architecture' },
+      { label: 'DATA LAYER', value: 'JDBC & MySQL' },
+      { label: 'LIFECYCLE', value: 'Custom Recruiter Workflow' },
+    ],
+  },
+  {
+    number: '05',
+    title: 'PhoneBook & IoT Contactless Switch',
+    category: 'JAVA OOPS & EMBEDDED AUTOMATION',
+    description:
+      'Desktop contact management system engineered with Java OOPs principles and JDBC storage, combined with a hardware automation switch using Arduino Uno and sensors for touchless device activation.',
+    githubUrl: 'https://github.com/Sandeepsingh6260',
+    tech: [
+      'Core Java',
+      'OOPs',
+      'JDBC',
+      'MySQL',
+      'Arduino Uno',
+      'Sensors',
+      'IoT Hardware',
+    ],
+    metrics: [
+      { label: 'CORE LOGIC', value: 'Java OOPs & JDBC' },
+      { label: 'HARDWARE', value: 'Arduino Uno & Sensors' },
+      { label: 'INTERFACE', value: 'Touchless IoT Switch' },
     ],
   },
 ];
@@ -264,16 +283,30 @@ export const ProjectsSection: React.FC = () => {
                       ))}
                     </div>
 
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center space-x-3 px-6 py-3.5 border border-[#8C6D4F] bg-[#16120E] hover:border-[#D4AF37] hover:bg-[#D4AF37] text-[#EAD8C7] hover:text-black text-[11px] font-medium tracking-[0.24em] uppercase transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.1)]"
-                      style={{ fontFamily: "'Montserrat', sans-serif" }}
-                    >
-                      <span>VIEW ON GITHUB</span>
-                      <span className="text-xs">↗</span>
-                    </a>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 inline-flex items-center justify-center space-x-2 px-5 py-3.5 border border-[#D4AF37] bg-[#D4AF37] hover:bg-transparent text-black hover:text-[#D4AF37] text-[11px] font-semibold tracking-[0.22em] uppercase transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.25)]"
+                          style={{ fontFamily: "'Montserrat', sans-serif" }}
+                        >
+                          <span>LIVE DEMO</span>
+                          <span className="text-xs">↗</span>
+                        </a>
+                      )}
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 inline-flex items-center justify-center space-x-2 px-5 py-3.5 border border-[#8C6D4F] bg-[#16120E] hover:border-[#D4AF37] hover:bg-[#D4AF37] text-[#EAD8C7] hover:text-black text-[11px] font-medium tracking-[0.22em] uppercase transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.1)]"
+                        style={{ fontFamily: "'Montserrat', sans-serif" }}
+                      >
+                        <span>VIEW ON GITHUB</span>
+                        <span className="text-xs">↗</span>
+                      </a>
+                    </div>
                   </div>
 
                 </div>
