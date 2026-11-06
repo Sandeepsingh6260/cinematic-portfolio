@@ -17,16 +17,18 @@ export const ContactSection: React.FC = () => {
     setSent(true);
   };
 
+
+
   return (
     <footer
       id="contact"
       className="relative w-full bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black pt-16 pb-16 px-6 sm:px-12 lg:px-20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        
+
         {/* Split Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
+
           {/* Left Column (5 Cols) */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
@@ -141,7 +143,7 @@ export const ContactSection: React.FC = () => {
           >
             {/* Top Gold Horizon Edge */}
             <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/70 to-transparent" />
-            
+
             {/* Precision Corner Crosshairs */}
             <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-[#D4AF37]/60" />
             <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-[#D4AF37]/60" />
@@ -162,7 +164,7 @@ export const ContactSection: React.FC = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">

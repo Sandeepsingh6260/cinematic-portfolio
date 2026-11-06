@@ -67,33 +67,33 @@ export const AboutSection: React.FC = () => {
   };
 
   return (
-    <section 
-      id="about" 
+    <section
+      id="about"
       className="relative w-screen min-h-screen bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-hidden flex items-center"
     >
       {/* ================= BACKGROUND GLOWS & FLOATING PARTICLES ================= */}
-      <motion.div 
+      <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.08, 0.16, 0.08] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
         className="absolute top-1/4 left-1/6 w-[32rem] h-[32rem] bg-[#D4AF37] rounded-full blur-[160px] pointer-events-none"
       />
-      <motion.div 
+      <motion.div
         animate={{ scale: [1.2, 1, 1.2], opacity: [0.05, 0.12, 0.05] }}
         transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
         className="absolute bottom-1/6 right-1/4 w-[28rem] h-[28rem] bg-[#8C6D4F] rounded-full blur-[170px] pointer-events-none"
       />
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        
+
         {/* Eyebrow Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center space-x-4 mb-10"
         >
-          <span 
+          <span
             className="text-[11px] font-medium tracking-[0.35em] uppercase text-[#D4AF37]"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
@@ -104,7 +104,7 @@ export const AboutSection: React.FC = () => {
 
         {/* Main Grid: Content + Portrait */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* ================= LEFT CONTENT (7 COLS) ================= */}
           <motion.div
             variants={containerVariants}
@@ -138,13 +138,13 @@ export const AboutSection: React.FC = () => {
             </motion.p>
 
             {/* Concise 4-Item Achievement Metrics Grid */}
-            <motion.div 
+            <motion.div
               variants={fadeUpVariants}
               className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 pb-2 border-t border-[#8C6D4F]/25"
             >
               {/* Stat 1 */}
               <div className="flex flex-col">
-                <span 
+                <span
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
@@ -157,7 +157,7 @@ export const AboutSection: React.FC = () => {
 
               {/* Stat 2 */}
               <div className="flex flex-col">
-                <span 
+                <span
                   className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
@@ -170,7 +170,7 @@ export const AboutSection: React.FC = () => {
 
               {/* Stat 3 */}
               <div className="flex flex-col">
-                <span 
+                <span
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
@@ -183,7 +183,7 @@ export const AboutSection: React.FC = () => {
 
               {/* Stat 4 */}
               <div className="flex flex-col">
-                <span 
+                <span
                   className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
                 >
@@ -198,9 +198,9 @@ export const AboutSection: React.FC = () => {
 
           {/* ================= RIGHT PORTRAIT FRAME (PERFECT LOCKED GEOMETRY) ================= */}
           <div className="lg:col-span-5 flex items-center justify-center relative perspective-[1400px]">
-            
+
             {/* Ambient Animated Gold Glow Ring Behind Frame */}
-            <motion.div 
+            <motion.div
               animate={{
                 scale: isCardHovered ? 1.15 : 1,
                 opacity: isCardHovered ? 0.35 : 0.15,
@@ -231,6 +231,7 @@ export const AboutSection: React.FC = () => {
             {/* 3D Holographic Main Card Container */}
             <motion.div
               ref={cardRef}
+
               style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
               onMouseMove={handleMouseMove}
               onMouseEnter={handleMouseEnter}
@@ -243,7 +244,7 @@ export const AboutSection: React.FC = () => {
             >
               {/* Dynamic Laser Border Pulse on Card Perimeter */}
               <div className="absolute inset-0 rounded-sm pointer-events-none overflow-hidden">
-                <motion.div 
+                <motion.div
                   animate={{ x: isCardHovered ? ['-100%', '200%'] : '-100%' }}
                   transition={{ duration: 1.8, repeat: Infinity, ease: 'linear' }}
                   className="w-1/2 h-full bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent skew-x-12"
@@ -281,7 +282,7 @@ export const AboutSection: React.FC = () => {
 
                 {/* Monoline Signature */}
                 <div className="absolute bottom-4 right-4 z-20 select-none">
-                  <span 
+                  <span
                     className="text-3xl text-[#F2D8A7] drop-shadow-[0_0_12px_rgba(242,216,167,0.5)] transition-colors duration-300 group-hover:text-white"
                     style={{ fontFamily: "'Herr Von Muellerhoff', cursive" }}
                   >
