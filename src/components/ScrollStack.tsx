@@ -14,6 +14,7 @@ export const ScrollStackItem: React.FC<ScrollStackItemProps> = ({
   <div className={`scroll-stack-card ${itemClassName}`.trim()}>{children}</div>
 );
 
+
 export interface ScrollStackProps {
   children: React.ReactNode;
   className?: string;

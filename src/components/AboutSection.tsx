@@ -228,6 +228,8 @@ export const AboutSection: React.FC = () => {
               </>
             )}
 
+
+
             {/* 3D Holographic Main Card Container */}
             <motion.div
               ref={cardRef}
