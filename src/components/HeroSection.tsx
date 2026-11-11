@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import watermarkImg from '../assets/watermark.png';
 
+
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -109,7 +111,7 @@ export const HeroSection: React.FC = () => {
 
       {/* ================= 4. CONTENT LAYER ================= */}
       <div className="relative z-10 flex flex-col justify-between h-full w-full px-6 sm:px-12 lg:px-16 pt-6 pb-8 pointer-events-none">
-        
+
         {/* Navigation Bar */}
         <header className="relative flex items-center justify-between w-full pointer-events-auto">
           <a
@@ -173,7 +175,7 @@ export const HeroSection: React.FC = () => {
 
         {/* Main Hero Row */}
         <div className="relative flex flex-col md:flex-row items-center justify-between w-full pt-4 pb-2 my-auto">
-          
+
           {/* LEFT: Balanced Headline & Actions */}
           <motion.div
             variants={containerVariants}
@@ -279,7 +281,7 @@ export const HeroSection: React.FC = () => {
             </span>
 
             {/* 2. Compact Two-Line Statement */}
-            <div 
+            <div
               className="text-[9.5px] font-medium tracking-[0.24em] uppercase text-[#E0D3C5] space-y-1 mb-3"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
@@ -291,9 +293,9 @@ export const HeroSection: React.FC = () => {
             <div className="w-28 h-[1px] bg-gradient-to-r from-[#D4AF37] via-[#E8D7C5]/70 to-transparent shadow-[0_0_8px_rgba(212,175,55,0.4)] mb-2" />
 
             {/* 4. Fine Monoline Calligraphy Signature */}
-            <div 
+            <div
               className="text-[2.2rem] text-[#D8AB64] font-normal leading-none -ml-0.5"
-              style={{ 
+              style={{
                 fontFamily: "'Herr Von Muellerhoff', 'Allura', cursive",
                 letterSpacing: '0.04em',
               }}

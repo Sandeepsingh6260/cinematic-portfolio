@@ -17,8 +17,6 @@ export const ContactSection: React.FC = () => {
     setSent(true);
   };
 
-
-
   return (
     <footer
       id="contact"
