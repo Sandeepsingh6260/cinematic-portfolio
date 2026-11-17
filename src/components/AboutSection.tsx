@@ -59,7 +59,6 @@ export const AboutSection: React.FC = () => {
   };
 
   const handleMouseEnter = () => setIsCardHovered(true);
-
   const handleMouseLeave = () => {
     setIsCardHovered(false);
     mouseX.set(0);
@@ -228,8 +227,6 @@ export const AboutSection: React.FC = () => {
               </>
             )}
 
-
-
             {/* 3D Holographic Main Card Container */}
             <motion.div
               ref={cardRef}
@@ -301,5 +298,4 @@ export const AboutSection: React.FC = () => {
     </section>
   );
 };
-
 export default AboutSection;
