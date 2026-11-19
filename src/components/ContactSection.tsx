@@ -131,6 +131,7 @@ export const ContactSection: React.FC = () => {
             </div>
           </div>
 
+
           {/* Right Column: Monolith Terminal Form (7 Cols) */}
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -160,11 +161,8 @@ export const ContactSection: React.FC = () => {
                   Transmission registered successfully.
                 </p>
               </div>
-
             ) : (
-
               <form onSubmit={handleSubmit} className="space-y-6">
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <span className="block text-[9.5px] font-mono tracking-[0.2em] uppercase text-[#8C6D4F] mb-2">
